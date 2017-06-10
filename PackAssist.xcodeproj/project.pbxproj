@@ -13,7 +13,11 @@
 		1D9FAC6D1E8462E1006F25AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D9FAC6C1E8462E1006F25AB /* Assets.xcassets */; };
 		1D9FAC701E8462E1006F25AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D9FAC6E1E8462E1006F25AB /* LaunchScreen.storyboard */; };
 		1D9FAC7B1E8462E1006F25AB /* PackAssistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9FAC7A1E8462E1006F25AB /* PackAssistTests.swift */; };
-		1D9FAC861E8462E1006F25AB /* PackAssistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9FAC851E8462E1006F25AB /* PackAssistUITests.swift */; };
+		1D9FAC9A1E846B32006F25AB /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D9FAC991E846B32006F25AB /* CloudKit.framework */; };
+		1DB77FC61E89BE0200F5CC68 /* APICloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB77FC51E89BE0200F5CC68 /* APICloud.swift */; };
+		1DB77FC81E8ADE8000F5CC68 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB77FC71E8ADE8000F5CC68 /* Trip.swift */; };
+		1DB77FCA1E8ADE9C00F5CC68 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB77FC91E8ADE9C00F5CC68 /* Destination.swift */; };
+		1DB77FCC1E8ADEBF00F5CC68 /* PackingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB77FCB1E8ADEBF00F5CC68 /* PackingList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,13 +44,17 @@
 		1D9FAC6A1E8462E0006F25AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D9FAC6C1E8462E1006F25AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D9FAC6F1E8462E1006F25AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1D9FAC711E8462E1006F25AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D9FAC711E8462E1006F25AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = PackAssist/Info.plist; sourceTree = "<group>"; };
 		1D9FAC761E8462E1006F25AB /* PackAssistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PackAssistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D9FAC7A1E8462E1006F25AB /* PackAssistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackAssistTests.swift; sourceTree = "<group>"; };
 		1D9FAC7C1E8462E1006F25AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D9FAC811E8462E1006F25AB /* PackAssistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PackAssistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D9FAC851E8462E1006F25AB /* PackAssistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackAssistUITests.swift; sourceTree = "<group>"; };
-		1D9FAC871E8462E1006F25AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D9FAC971E84641B006F25AB /* PackAssist.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PackAssist.entitlements; sourceTree = "<group>"; };
+		1D9FAC991E846B32006F25AB /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		1DB77FC51E89BE0200F5CC68 /* APICloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICloud.swift; sourceTree = "<group>"; };
+		1DB77FC71E8ADE8000F5CC68 /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		1DB77FC91E8ADE9C00F5CC68 /* Destination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		1DB77FCB1E8ADEBF00F5CC68 /* PackingList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackingList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D9FAC9A1E846B32006F25AB /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,9 +87,10 @@
 			isa = PBXGroup;
 			children = (
 				1D9FAC641E8462E0006F25AB /* PackAssist */,
+				1D9FAC711E8462E1006F25AB /* Info.plist */,
 				1D9FAC791E8462E1006F25AB /* PackAssistTests */,
-				1D9FAC841E8462E1006F25AB /* PackAssistUITests */,
 				1D9FAC631E8462E0006F25AB /* Products */,
+				1D9FAC981E846B32006F25AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +107,11 @@
 		1D9FAC641E8462E0006F25AB /* PackAssist */ = {
 			isa = PBXGroup;
 			children = (
-				1D9FAC651E8462E0006F25AB /* AppDelegate.swift */,
-				1D9FAC671E8462E0006F25AB /* ViewController.swift */,
-				1D9FAC691E8462E0006F25AB /* Main.storyboard */,
-				1D9FAC6C1E8462E1006F25AB /* Assets.xcassets */,
-				1D9FAC6E1E8462E1006F25AB /* LaunchScreen.storyboard */,
-				1D9FAC711E8462E1006F25AB /* Info.plist */,
+				1D9FAC971E84641B006F25AB /* PackAssist.entitlements */,
+				1D9FAC961E846355006F25AB /* App Global */,
+				1D9FAC951E846311006F25AB /* Controller */,
+				1D9FAC931E846300006F25AB /* Model */,
+				1D9FAC941E84630C006F25AB /* View */,
 			);
 			path = PackAssist;
 			sourceTree = "<group>";
@@ -116,13 +125,49 @@
 			path = PackAssistTests;
 			sourceTree = "<group>";
 		};
-		1D9FAC841E8462E1006F25AB /* PackAssistUITests */ = {
+		1D9FAC931E846300006F25AB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1D9FAC851E8462E1006F25AB /* PackAssistUITests.swift */,
-				1D9FAC871E8462E1006F25AB /* Info.plist */,
+				1DB77FC51E89BE0200F5CC68 /* APICloud.swift */,
+				1DB77FC71E8ADE8000F5CC68 /* Trip.swift */,
+				1DB77FC91E8ADE9C00F5CC68 /* Destination.swift */,
+				1DB77FCB1E8ADEBF00F5CC68 /* PackingList.swift */,
 			);
-			path = PackAssistUITests;
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1D9FAC941E84630C006F25AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1D9FAC6E1E8462E1006F25AB /* LaunchScreen.storyboard */,
+				1D9FAC691E8462E0006F25AB /* Main.storyboard */,
+				1D9FAC6C1E8462E1006F25AB /* Assets.xcassets */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1D9FAC951E846311006F25AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1D9FAC671E8462E0006F25AB /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1D9FAC961E846355006F25AB /* App Global */ = {
+			isa = PBXGroup;
+			children = (
+				1D9FAC651E8462E0006F25AB /* AppDelegate.swift */,
+			);
+			name = "App Global";
+			sourceTree = "<group>";
+		};
+		1D9FAC981E846B32006F25AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D9FAC991E846B32006F25AB /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +240,14 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = ABJU8Z7J96;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					1D9FAC751E8462E1006F25AB = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -262,8 +315,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DB77FC81E8ADE8000F5CC68 /* Trip.swift in Sources */,
 				1D9FAC681E8462E0006F25AB /* ViewController.swift in Sources */,
+				1DB77FCA1E8ADE9C00F5CC68 /* Destination.swift in Sources */,
+				1DB77FCC1E8ADEBF00F5CC68 /* PackingList.swift in Sources */,
 				1D9FAC661E8462E0006F25AB /* AppDelegate.swift in Sources */,
+				1DB77FC61E89BE0200F5CC68 /* APICloud.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +336,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D9FAC861E8462E1006F25AB /* PackAssistUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,8 +471,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PackAssist/PackAssist.entitlements;
 				DEVELOPMENT_TEAM = ABJU8Z7J96;
 				INFOPLIST_FILE = PackAssist/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RickStoner.PackAssist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -428,8 +486,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PackAssist/PackAssist.entitlements;
 				DEVELOPMENT_TEAM = ABJU8Z7J96;
 				INFOPLIST_FILE = PackAssist/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RickStoner.PackAssist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -514,6 +574,7 @@
 				1D9FAC8C1E8462E1006F25AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1D9FAC8D1E8462E1006F25AB /* Build configuration list for PBXNativeTarget "PackAssistTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +583,7 @@
 				1D9FAC8F1E8462E1006F25AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1D9FAC901E8462E1006F25AB /* Build configuration list for PBXNativeTarget "PackAssistUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +592,7 @@
 				1D9FAC921E8462E1006F25AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
